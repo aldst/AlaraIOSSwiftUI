@@ -11,6 +11,7 @@ import SDWebImageSwiftUI
 
 struct AlbumDetail: View {
     
+    // falta arreglar esta vista
     var imName = ""
     var user = ""
     var autor = ""
