@@ -9,6 +9,7 @@
 import Foundation
 import SwiftUI
 
+// se crean los datos de las clases
 struct datatype1 : Identifiable {
     
     var id : String
