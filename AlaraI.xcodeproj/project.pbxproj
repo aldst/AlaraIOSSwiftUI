@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E2AF2EC236900180089F04E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E2AF2EB236900170089F04E /* GoogleService-Info.plist */; };
+		1E69A8C0236C92B20099F9A1 /* kuntur.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1E69A8BF236C92B20099F9A1 /* kuntur.mp3 */; };
+		1E69A8C2236C93310099F9A1 /* AVPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E69A8C1236C93310099F9A1 /* AVPlayerView.swift */; };
+		1E69A8D0236CC3460099F9A1 /* SongVerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E69A8CF236CC3460099F9A1 /* SongVerView.swift */; };
+		1E69A8D4236CD1090099F9A1 /* SongDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E69A8D3236CD1090099F9A1 /* SongDetailView.swift */; };
+		1E69A8DE236CD6B20099F9A1 /* ArtistDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E69A8DD236CD6B20099F9A1 /* ArtistDetailView.swift */; };
+		1E69A8E2236CD70B0099F9A1 /* ArtistVerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E69A8E1236CD70B0099F9A1 /* ArtistVerView.swift */; };
+		1E69A8E4236CE3B30099F9A1 /* ArtistHorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E69A8E3236CE3B30099F9A1 /* ArtistHorView.swift */; };
+		1E69A8E6236CE78B0099F9A1 /* AlbumDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E69A8E5236CE78B0099F9A1 /* AlbumDetailView.swift */; };
+		1E69A8E8236CE7AB0099F9A1 /* AlbumVerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E69A8E7236CE7AB0099F9A1 /* AlbumVerView.swift */; };
+		1E69A8EA236CEC130099F9A1 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E69A8E9236CEC130099F9A1 /* SearchView.swift */; };
+		1E69A8EF236CEE830099F9A1 /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E69A8EE236CEE830099F9A1 /* AlbumView.swift */; };
+		1E69A8F1236CEEA20099F9A1 /* ArtistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E69A8F0236CEEA20099F9A1 /* ArtistView.swift */; };
+		1E6DD6E92368136F00A29A5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6DD6E82368136F00A29A5A /* AppDelegate.swift */; };
+		1E6DD6EB2368136F00A29A5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6DD6EA2368136F00A29A5A /* SceneDelegate.swift */; };
+		1E6DD6ED2368136F00A29A5A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6DD6EC2368136F00A29A5A /* ContentView.swift */; };
+		1E6DD6EF2368137600A29A5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E6DD6EE2368137600A29A5A /* Assets.xcassets */; };
+		1E6DD6F22368137600A29A5A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E6DD6F12368137600A29A5A /* Preview Assets.xcassets */; };
+		1E6DD6F52368137600A29A5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E6DD6F32368137600A29A5A /* LaunchScreen.storyboard */; };
+		1E734448236FCEB800EBD2A8 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 1E734447236FCEB800EBD2A8 /* SDWebImageSwiftUI */; };
+		1E73444B2370B8BE00EBD2A8 /* statusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E73444A2370B8BE00EBD2A8 /* statusView.swift */; };
+		1E73444D2370B92300EBD2A8 /* statusCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E73444C2370B92300EBD2A8 /* statusCard.swift */; };
+		1E73444F2370BB5900EBD2A8 /* postCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E73444E2370BB5900EBD2A8 /* postCard.swift */; };
+		1E7344522370BDE800EBD2A8 /* Observers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7344512370BDE800EBD2A8 /* Observers.swift */; };
+		1E7344542370BE8900EBD2A8 /* dataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7344532370BE8900EBD2A8 /* dataTypes.swift */; };
+		1EDD88C22372524900561DD4 /* songView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDD88C12372524900561DD4 /* songView.swift */; };
+		1EDD88C42372525E00561DD4 /* albumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDD88C32372525E00561DD4 /* albumView.swift */; };
+		1EDD88C62372547500561DD4 /* albumCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDD88C52372547500561DD4 /* albumCard.swift */; };
+		1EF5CC3F2369C8AA0029F1CC /* tabBarIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF5CC3E2369C8AA0029F1CC /* tabBarIView.swift */; };
+		1EF5CC412369CE3B0029F1CC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF5CC402369CE3B0029F1CC /* HomeView.swift */; };
+		1EF5CC472369CF520029F1CC /* MyLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF5CC462369CF520029F1CC /* MyLibraryView.swift */; };
+		1EF5CC4D2369D1F00029F1CC /* SongView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF5CC4C2369D1EF0029F1CC /* SongView.swift */; };
+		391E824067107D50796AB4D9 /* Pods_AlaraI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3C9324058BB76EB2D13E225 /* Pods_AlaraI.framework */; };
+		8B0329EB23733D82003EFAF5 /* artistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0329EA23733D82003EFAF5 /* artistView.swift */; };
+		8B0C0CD82372FB7400EB499E /* AlbumDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0C0CD72372FB7400EB499E /* AlbumDetail.swift */; };
+		8B0C0CDA2372FB8200EB499E /* ArtistDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0C0CD92372FB8200EB499E /* ArtistDetail.swift */; };
+		8BE5C17C23730F120000F818 /* artistCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE5C17B23730F120000F818 /* artistCard.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0B0B216CC5DB4D9CE63AE9E1 /* Pods-AlaraI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlaraI.debug.xcconfig"; path = "Target Support Files/Pods-AlaraI/Pods-AlaraI.debug.xcconfig"; sourceTree = "<group>"; };
+		1E2AF2EB236900170089F04E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1E69A8BF236C92B20099F9A1 /* kuntur.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kuntur.mp3; sourceTree = "<group>"; };
+		1E69A8C1236C93310099F9A1 /* AVPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerView.swift; sourceTree = "<group>"; };
+		1E69A8C3236C9ED10099F9A1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1E69A8CF236CC3460099F9A1 /* SongVerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongVerView.swift; sourceTree = "<group>"; };
+		1E69A8D3236CD1090099F9A1 /* SongDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailView.swift; sourceTree = "<group>"; };
+		1E69A8DD236CD6B20099F9A1 /* ArtistDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistDetailView.swift; sourceTree = "<group>"; };
+		1E69A8E1236CD70B0099F9A1 /* ArtistVerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistVerView.swift; sourceTree = "<group>"; };
+		1E69A8E3236CE3B30099F9A1 /* ArtistHorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistHorView.swift; sourceTree = "<group>"; };
+		1E69A8E5236CE78B0099F9A1 /* AlbumDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailView.swift; sourceTree = "<group>"; };
+		1E69A8E7236CE7AB0099F9A1 /* AlbumVerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumVerView.swift; sourceTree = "<group>"; };
+		1E69A8E9236CEC130099F9A1 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		1E69A8EE236CEE830099F9A1 /* AlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; tabWidth = 4; };
+		1E69A8F0236CEEA20099F9A1 /* ArtistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistView.swift; sourceTree = "<group>"; };
+		1E6DD6E52368136F00A29A5A /* AlaraI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlaraI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E6DD6E82368136F00A29A5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1E6DD6EA2368136F00A29A5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1E6DD6EC2368136F00A29A5A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1E6DD6EE2368137600A29A5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E6DD6F12368137600A29A5A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1E6DD6F42368137600A29A5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1E6DD6F62368137600A29A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E73444A2370B8BE00EBD2A8 /* statusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statusView.swift; sourceTree = "<group>"; };
+		1E73444C2370B92300EBD2A8 /* statusCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statusCard.swift; sourceTree = "<group>"; };
+		1E73444E2370BB5900EBD2A8 /* postCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postCard.swift; sourceTree = "<group>"; };
+		1E7344512370BDE800EBD2A8 /* Observers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observers.swift; sourceTree = "<group>"; };
+		1E7344532370BE8900EBD2A8 /* dataTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataTypes.swift; sourceTree = "<group>"; };
+		1EDD88C12372524900561DD4 /* songView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = songView.swift; sourceTree = "<group>"; };
+		1EDD88C32372525E00561DD4 /* albumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = albumView.swift; sourceTree = "<group>"; };
+		1EDD88C52372547500561DD4 /* albumCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = albumCard.swift; sourceTree = "<group>"; };
+		1EF5CC3E2369C8AA0029F1CC /* tabBarIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBarIView.swift; sourceTree = "<group>"; };
+		1EF5CC402369CE3B0029F1CC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1EF5CC462369CF520029F1CC /* MyLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLibraryView.swift; sourceTree = "<group>"; };
+		1EF5CC4C2369D1EF0029F1CC /* SongView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongView.swift; sourceTree = "<group>"; };
+		28A8D2F305C53B0BB111B276 /* Pods-AlaraI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlaraI.release.xcconfig"; path = "Target Support Files/Pods-AlaraI/Pods-AlaraI.release.xcconfig"; sourceTree = "<group>"; };
+		8B0329EA23733D82003EFAF5 /* artistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = artistView.swift; sourceTree = "<group>"; };
+		8B0C0CD72372FB7400EB499E /* AlbumDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetail.swift; sourceTree = "<group>"; };
+		8B0C0CD92372FB8200EB499E /* ArtistDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistDetail.swift; sourceTree = "<group>"; };
+		8BE5C17B23730F120000F818 /* artistCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = artistCard.swift; sourceTree = "<group>"; };
+		E3C9324058BB76EB2D13E225 /* Pods_AlaraI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlaraI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E6DD6E22368136F00A29A5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E734448236FCEB800EBD2A8 /* SDWebImageSwiftUI in Frameworks */,
+				391E824067107D50796AB4D9 /* Pods_AlaraI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E69A8C8236CA8FC0099F9A1 /* Song */ = {
+			isa = PBXGroup;
+			children = (
+				1E69A8CF236CC3460099F9A1 /* SongVerView.swift */,
+				1E69A8D3236CD1090099F9A1 /* SongDetailView.swift */,
+			);
+			path = Song;
+			sourceTree = "<group>";
+		};
+		1E69A8D5236CD4D80099F9A1 /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				1E69A8E5236CE78B0099F9A1 /* AlbumDetailView.swift */,
+				1E69A8E7236CE7AB0099F9A1 /* AlbumVerView.swift */,
+				8B0C0CD72372FB7400EB499E /* AlbumDetail.swift */,
+			);
+			path = Album;
+			sourceTree = "<group>";
+		};
+		1E69A8D8236CD5120099F9A1 /* Artist */ = {
+			isa = PBXGroup;
+			children = (
+				1E69A8DD236CD6B20099F9A1 /* ArtistDetailView.swift */,
+				1E69A8E1236CD70B0099F9A1 /* ArtistVerView.swift */,
+				1E69A8E3236CE3B30099F9A1 /* ArtistHorView.swift */,
+				8B0C0CD92372FB8200EB499E /* ArtistDetail.swift */,
+			);
+			path = Artist;
+			sourceTree = "<group>";
+		};
+		1E69A8EC236CEDFA0099F9A1 /* Principal Views */ = {
+			isa = PBXGroup;
+			children = (
+				1EF5CC402369CE3B0029F1CC /* HomeView.swift */,
+				1E7344492370B89200EBD2A8 /* status */,
+				1E7344502370BDB300EBD2A8 /* Modals */,
+				1E69A8E9236CEC130099F9A1 /* SearchView.swift */,
+				1EF5CC462369CF520029F1CC /* MyLibraryView.swift */,
+				1E69A8ED236CEE070099F9A1 /* My library Views */,
+			);
+			path = "Principal Views";
+			sourceTree = "<group>";
+		};
+		1E69A8ED236CEE070099F9A1 /* My library Views */ = {
+			isa = PBXGroup;
+			children = (
+				1EF5CC4C2369D1EF0029F1CC /* SongView.swift */,
+				1E69A8C8236CA8FC0099F9A1 /* Song */,
+				1E69A8F0236CEEA20099F9A1 /* ArtistView.swift */,
+				1E69A8D8236CD5120099F9A1 /* Artist */,
+				1E69A8EE236CEE830099F9A1 /* AlbumView.swift */,
+				1E69A8D5236CD4D80099F9A1 /* Album */,
+			);
+			name = "My library Views";
+			path = "../New Group/My library Views";
+			sourceTree = "<group>";
+		};
+		1E6DD6DC2368136F00A29A5A = {
+			isa = PBXGroup;
+			children = (
+				1E69A8C1236C93310099F9A1 /* AVPlayerView.swift */,
+				1E69A8BF236C92B20099F9A1 /* kuntur.mp3 */,
+				1E6DD6E72368136F00A29A5A /* AlaraI */,
+				1E6DD6E62368136F00A29A5A /* Products */,
+				FABD4B9907B7C4FD4A606943 /* Pods */,
+				7AA680D434EDA3F4E003105B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1E6DD6E62368136F00A29A5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E6DD6E52368136F00A29A5A /* AlaraI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E6DD6E72368136F00A29A5A /* AlaraI */ = {
+			isa = PBXGroup;
+			children = (
+				1E69A8EC236CEDFA0099F9A1 /* Principal Views */,
+				1E6DD6E82368136F00A29A5A /* AppDelegate.swift */,
+				1E6DD6EA2368136F00A29A5A /* SceneDelegate.swift */,
+				1E6DD6EC2368136F00A29A5A /* ContentView.swift */,
+				1EF5CC3E2369C8AA0029F1CC /* tabBarIView.swift */,
+				1E6DD6EE2368137600A29A5A /* Assets.xcassets */,
+				1E6DD6F32368137600A29A5A /* LaunchScreen.storyboard */,
+				1E6DD6F62368137600A29A5A /* Info.plist */,
+				1E2AF2EB236900170089F04E /* GoogleService-Info.plist */,
+				1E6DD6F02368137600A29A5A /* Preview Content */,
+			);
+			path = AlaraI;
+			sourceTree = "<group>";
+		};
+		1E6DD6F02368137600A29A5A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1E6DD6F12368137600A29A5A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1E7344492370B89200EBD2A8 /* status */ = {
+			isa = PBXGroup;
+			children = (
+				1E73444A2370B8BE00EBD2A8 /* statusView.swift */,
+				1E73444C2370B92300EBD2A8 /* statusCard.swift */,
+				1E73444E2370BB5900EBD2A8 /* postCard.swift */,
+				1EDD88C12372524900561DD4 /* songView.swift */,
+				8BE5C17B23730F120000F818 /* artistCard.swift */,
+				8B0329EA23733D82003EFAF5 /* artistView.swift */,
+				1EDD88C52372547500561DD4 /* albumCard.swift */,
+				1EDD88C32372525E00561DD4 /* albumView.swift */,
+			);
+			path = status;
+			sourceTree = "<group>";
+		};
+		1E7344502370BDB300EBD2A8 /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				1E7344512370BDE800EBD2A8 /* Observers.swift */,
+				1E7344532370BE8900EBD2A8 /* dataTypes.swift */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
+		7AA680D434EDA3F4E003105B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E69A8C3236C9ED10099F9A1 /* AVFoundation.framework */,
+				E3C9324058BB76EB2D13E225 /* Pods_AlaraI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FABD4B9907B7C4FD4A606943 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B0B216CC5DB4D9CE63AE9E1 /* Pods-AlaraI.debug.xcconfig */,
+				28A8D2F305C53B0BB111B276 /* Pods-AlaraI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E6DD6E42368136F00A29A5A /* AlaraI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E6DD6F92368137600A29A5A /* Build configuration list for PBXNativeTarget "AlaraI" */;
+			buildPhases = (
+				113672D1FCDC17B403155802 /* [CP] Check Pods Manifest.lock */,
+				1E6DD6E12368136F00A29A5A /* Sources */,
+				1E6DD6E22368136F00A29A5A /* Frameworks */,
+				1E6DD6E32368136F00A29A5A /* Resources */,
+				AA4C1EE0D2F2A5C6B0A9ECC3 /* [CP] Embed Pods Frameworks */,
+				2A3C0154A7C5E273C6F50123 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlaraI;
+			packageProductDependencies = (
+				1E734447236FCEB800EBD2A8 /* SDWebImageSwiftUI */,
+			);
+			productName = AlaraI;
+			productReference = 1E6DD6E52368136F00A29A5A /* AlaraI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1E6DD6DD2368136F00A29A5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "alvaro Soto";
+				TargetAttributes = {
+					1E6DD6E42368136F00A29A5A = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 1E6DD6E02368136F00A29A5A /* Build configuration list for PBXProject "AlaraI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1E6DD6DC2368136F00A29A5A;
+			packageReferences = (
+				1E734444236FADA100EBD2A8 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
+			productRefGroup = 1E6DD6E62368136F00A29A5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E6DD6E42368136F00A29A5A /* AlaraI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E6DD6E32368136F00A29A5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E6DD6F52368137600A29A5A /* LaunchScreen.storyboard in Resources */,
+				1E2AF2EC236900180089F04E /* GoogleService-Info.plist in Resources */,
+				1E6DD6F22368137600A29A5A /* Preview Assets.xcassets in Resources */,
+				1E6DD6EF2368137600A29A5A /* Assets.xcassets in Resources */,
+				1E69A8C0236C92B20099F9A1 /* kuntur.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		113672D1FCDC17B403155802 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlaraI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A3C0154A7C5E273C6F50123 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlaraI/Pods-AlaraI-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlaraI/Pods-AlaraI-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlaraI/Pods-AlaraI-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA4C1EE0D2F2A5C6B0A9ECC3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlaraI/Pods-AlaraI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlaraI/Pods-AlaraI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlaraI/Pods-AlaraI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E6DD6E12368136F00A29A5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E69A8C2236C93310099F9A1 /* AVPlayerView.swift in Sources */,
+				1E69A8EA236CEC130099F9A1 /* SearchView.swift in Sources */,
+				1E69A8F1236CEEA20099F9A1 /* ArtistView.swift in Sources */,
+				1EF5CC3F2369C8AA0029F1CC /* tabBarIView.swift in Sources */,
+				1E69A8E8236CE7AB0099F9A1 /* AlbumVerView.swift in Sources */,
+				1E7344542370BE8900EBD2A8 /* dataTypes.swift in Sources */,
+				1E6DD6E92368136F00A29A5A /* AppDelegate.swift in Sources */,
+				1E6DD6EB2368136F00A29A5A /* SceneDelegate.swift in Sources */,
+				1E69A8E4236CE3B30099F9A1 /* ArtistHorView.swift in Sources */,
+				1E69A8D4236CD1090099F9A1 /* SongDetailView.swift in Sources */,
+				1E73444F2370BB5900EBD2A8 /* postCard.swift in Sources */,
+				1EDD88C22372524900561DD4 /* songView.swift in Sources */,
+				1E69A8D0236CC3460099F9A1 /* SongVerView.swift in Sources */,
+				1E7344522370BDE800EBD2A8 /* Observers.swift in Sources */,
+				8B0C0CD82372FB7400EB499E /* AlbumDetail.swift in Sources */,
+				1EF5CC412369CE3B0029F1CC /* HomeView.swift in Sources */,
+				8BE5C17C23730F120000F818 /* artistCard.swift in Sources */,
+				1EDD88C62372547500561DD4 /* albumCard.swift in Sources */,
+				1E69A8DE236CD6B20099F9A1 /* ArtistDetailView.swift in Sources */,
+				1E69A8E6236CE78B0099F9A1 /* AlbumDetailView.swift in Sources */,
+				1EDD88C42372525E00561DD4 /* albumView.swift in Sources */,
+				1EF5CC4D2369D1F00029F1CC /* SongView.swift in Sources */,
+				1E6DD6ED2368136F00A29A5A /* ContentView.swift in Sources */,
+				1E73444D2370B92300EBD2A8 /* statusCard.swift in Sources */,
+				1E73444B2370B8BE00EBD2A8 /* statusView.swift in Sources */,
+				1EF5CC472369CF520029F1CC /* MyLibraryView.swift in Sources */,
+				1E69A8EF236CEE830099F9A1 /* AlbumView.swift in Sources */,
+				8B0329EB23733D82003EFAF5 /* artistView.swift in Sources */,
+				1E69A8E2236CD70B0099F9A1 /* ArtistVerView.swift in Sources */,
+				8B0C0CDA2372FB8200EB499E /* ArtistDetail.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1E6DD6F32368137600A29A5A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E6DD6F42368137600A29A5A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1E6DD6F72368137600A29A5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1E6DD6F82368137600A29A5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1E6DD6FA2368137600A29A5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B0B216CC5DB4D9CE63AE9E1 /* Pods-AlaraI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"AlaraI/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = AlaraI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alara.AlaraI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1E6DD6FB2368137600A29A5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28A8D2F305C53B0BB111B276 /* Pods-AlaraI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"AlaraI/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = AlaraI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alara.AlaraI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E6DD6E02368136F00A29A5A /* Build configuration list for PBXProject "AlaraI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E6DD6F72368137600A29A5A /* Debug */,
+				1E6DD6F82368137600A29A5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E6DD6F92368137600A29A5A /* Build configuration list for PBXNativeTarget "AlaraI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E6DD6FA2368137600A29A5A /* Debug */,
+				1E6DD6FB2368137600A29A5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1E734444236FADA100EBD2A8 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1E734447236FCEB800EBD2A8 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E734444236FADA100EBD2A8 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 1E6DD6DD2368136F00A29A5A /* Project object */;
+}
