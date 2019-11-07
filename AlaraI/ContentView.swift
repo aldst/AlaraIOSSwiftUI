@@ -17,6 +17,7 @@ struct ContentView: View {
     @State var message = ""
     
     @State var isActive: Bool = false
+    @State private var action: Int? = 0
     
     var body: some View {
         
@@ -25,7 +26,7 @@ struct ContentView: View {
             VStack(alignment: .leading) {
                     
                     Spacer()
-                    
+                
                     HStack {
                         Spacer()
                         Image("logo76")
@@ -34,7 +35,7 @@ struct ContentView: View {
                             .aspectRatio(CGSize(width: 315, height: 502), contentMode: .fit)
                         Spacer()
                     }
-                     
+                      Spacer()
                     //InputTextField(stateBinding: $username,label: "Usuario",placeholder: "john_wick")
                       
                     //InputTextField(stateBinding: $password,label: "Contrasena",placeholder: "p@assword")
@@ -43,86 +44,106 @@ struct ContentView: View {
                     
                     TextField("Contrasena", text: $password).textFieldStyle(RoundedBorderTextFieldStyle()).padding()
                     
-                    NavigationLink(destination: tabBarIView(), isActive: self.$isActive){
-                        Text("")
-                    }
-                    
-                    
+    
+                
                     HStack {
                         
-                        Button(action: {
-                            
-                            if self.email == "" && self.password != "" {
+                        HStack {
+                            NavigationLink(destination: tabBarIView()){
                                 
-                                self.message = "Ingresse los contenidos"
-                                self.shown.toggle()
-                                return
+                                    Text("Iniciar Sesion")
+                                    .font(.headline)
+                                    .fontWeight(.heavy)
+                                    .foregroundColor(Color.white)
                                 
-                            }
-         
-                            Auth.auth().signIn(withEmail: self.email, password: self.password) { (res, err) in
-                                if err != nil {
+                                /*
+                                Button(action: {
+                                                   
+                                                   if self.email == "" && self.password != "" {
+                                                       
+                                                       self.message = "Ingresse los contenidos"
+                                                       self.shown.toggle()
+                                                       return
+                                                       
+                                                   }
+                                
+                                                   Auth.auth().signIn(withEmail: self.email, password: self.password) { (res, err) in
+                                                       if err != nil {
+                                                           
+                                                           
+                                                           print((err!.localizedDescription))
+                                                           self.message = err!.localizedDescription
+                                                           self.shown.toggle()
+                                                           return
+                                                       }
+                                                       //self.action = 1
+                                                       self.message = "Ingreso exitoso"
+                                                       self.shown.toggle()
+                                                       
+                                                   }
+                                                   //self.isActive = true
+                                               }) {
+                                                   Text("Iniciar Sesion")
+                                                       .font(.headline)
+                                                       .fontWeight(.heavy)
+                                                       .foregroundColor(Color.white)
+                                               }
                                     
-                                    
-                                    print((err!.localizedDescription))
-                                    self.message = err!.localizedDescription
-                                    self.shown.toggle()
-                                    return
                                 }
-                                
-                                self.message = "Ingreso exitoso"
-                                self.shown.toggle()
-                                
+ */
+
                             }
-                            //self.isActive = true
-                        }) {
-                            Text("Iniciar Sesion")
-                                .font(.headline)
-                                .fontWeight(.heavy)
-                                .foregroundColor(Color.white)
-                        }
+                                
+                        }.padding(.vertical)
+                        .background(Color.red)
+                        .cornerRadius(5)
+                        .padding(.horizontal, 40)
                         
-                        Spacer()
-                        Button(action: {
-                                
-                                if self.email == "" && self.password != "" {
+                        
+                        HStack() {
+                            Spacer()
+                            Button(action: {
                                     
-                                    self.message = "Ingresse los contenidos"
-                                    self.shown.toggle()
-                                    return
-                                    
-                                }
-                                
-                                Auth.auth().createUser(withEmail: self.email, password: self.password) { (res, err) in
-                                    
-                                    if err != nil {
+                                    if self.email == "" && self.password != "" {
                                         
-                                        print(err!.localizedDescription)
-                                        self.message = err!.localizedDescription
+                                        self.message = "Ingresse los contenidos"
                                         self.shown.toggle()
                                         return
                                         
                                     }
-                                    //self.selection = 1
-                                    self.message = "Registro exitoso"
-                                    self.shown.toggle()
                                     
+                                    Auth.auth().createUser(withEmail: self.email, password: self.password) { (res, err) in
+                                        
+                                        if err != nil {
+                                            
+                                            print(err!.localizedDescription)
+                                            self.message = err!.localizedDescription
+                                            self.shown.toggle()
+                                            return
+                                            
+                                        }
+                                        //self.selection = 1
+                                        self.message = "Registro exitoso"
+                                        self.shown.toggle()
+                                        
+                                    }
+                                //self.isActive = true
+                                }) {
+                                    Text("Registrarse")
+                                        .font(.headline)
+                                        .fontWeight(.heavy)
+                                        .foregroundColor(Color.white)
                                 }
-                            //self.isActive = true
-                            }) {
-                                Text("Registrarse")
-                                    .font(.headline)
-                                    .fontWeight(.heavy)
-                                    .foregroundColor(Color.white)
-                            }
-                        }.alert(isPresented: $shown) {
-                            return Alert(title: Text(self.message))
-                            
-                    }.padding(.vertical)
-                        .background(Color.red)
-                        .cornerRadius(5)
-                        .padding(.horizontal, 40)
-                    
+                            }.alert(isPresented: $shown) {
+                                return Alert(title: Text(self.message))
+                                
+                        }.padding(.vertical)
+                            .background(Color.red)
+                            .cornerRadius(5)
+                            .padding(.horizontal, 40)
+                        
+                    }
+                    Spacer()
                 /*
                     Text("O desea ingresar con:")
                         .font(.subheadline)
@@ -130,15 +151,15 @@ struct ContentView: View {
                         .foregroundColor(Color.black)
                         .padding(.vertical, 
                         .padding(.horizontal, 30)
-                */
-                    /*
+           
                     login().frame(width: 140, height: 50, alignment: .leading)
                         .padding(.horizontal, 70)
                         .textFieldStyle(RoundedBorderTextFieldStyle()).padding()
                         .cornerRadius(8)
                     */
+                
                     Spacer()
-                }.padding(.horizontal)
+            }.padding(.horizontal)
                     .background(Image("fondo")
                     //.resizable()
                     .scaledToFill()
@@ -150,7 +171,7 @@ struct ContentView: View {
             
         }
         
-    
+        
 }
 
 struct ContentView_Previews: PreviewProvider {

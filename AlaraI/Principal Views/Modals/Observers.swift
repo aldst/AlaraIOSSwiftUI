@@ -136,9 +136,10 @@ class songObserver : ObservableObject{
                     let id = i.document.documentID
                     let name = i.document.get("name") as! String
                     let image = i.document.get("image") as! String
+                    let autor = i.document.get("autor") as! String
                     let song = i.document.get("song") as! String
                     
-                    self.song.append(songData(id: id, name: name, image: image, song: song))
+                    self.song.append(songData(id: id, name: name, image: image, autor: autor, song: song))
                 }
                 
                 if i.type == .removed{

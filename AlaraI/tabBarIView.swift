@@ -18,7 +18,6 @@ struct tabBarIView: View {
     
     var body: some View {
         
-        
         TabView{
             NavigationView{
                 HomeView().navigationBarTitle("Alara")
@@ -41,7 +40,6 @@ struct tabBarIView: View {
                 }
             }.tag(2)
             
-            
             MyLibraryView()//.navigationBarTitle("Mi libreria")
                 .tabItem {
                     VStack {
@@ -51,38 +49,7 @@ struct tabBarIView: View {
                     }
                 }.tag(3)
             }.accentColor(Color.green)
-        /*
-        TabView {
-            
-            HomeView()
-                .tabItem {
-                    VStack {
-                        Image(systemName:"house.fill")
-                            .font(.title)
-                        Text("Inicio")
-                    }
-            }.tag(1)
-            
-            SearchView()
-                .tabItem {
-                    VStack {
-                        Image(systemName:"magnifyingglass")
-                                .font(.title)
-                        Text("Buscar")
-                    }
-            }.tag(2)
-            
-            MyLibraryView()
-                .tabItem {
-                    VStack {
-                        Image(systemName:"book.fill")
-                            .font(.title)
-                        Text("Mi libreria")
-                    }
-            }.tag(3)
-            
-        }.accentColor(Color.blue)
- */
+        
     }
 }
 

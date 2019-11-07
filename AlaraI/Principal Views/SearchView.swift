@@ -10,36 +10,33 @@ import SwiftUI
 
 struct SearchView: View {
     
-    @ObservedObject var observed = artistObserver()
-    @ObservedObject var postsobserver = Postobserver()
+    @ObservedObject var songobserved = songObserver()
     @State var show = false
     @State var user = ""
     @State var url = ""
+    @State var autor = ""
+    @State var song = ""
     
     var body: some View {
-        NavigationView{
-            List {
-                ForEach(observed.artist) {_ in
-                    
-                    NavigationLink(destination: Text("Detalles")){
-                        HStack(alignment: .center, spacing: 1.0) {
-                            Image("losPrisioneros")
-                                .resizable()
-                                //.cornerRadius(8)
-                                .clipShape(Circle())
-                                .overlay(Circle().stroke(Color.green, lineWidth: 4))
-                                .frame(width: 100, height: 80)
-                            
-                            VStack (alignment: .leading) {
-                               Text("Placeholder")
-                                    .font(.headline)
-                            }
-                            Spacer()
-                        }
+        
+        VStack {
+        if(songobserved.song.isEmpty){
+            Spacer()
+            Text("No se han registrado canciones")
+                .fontWeight(.heavy)
+                .padding(.top)
+            Spacer()
+            
+        }else{
+            List(songobserved.song) {i in
+                NavigationLink(destination: SongDetail(imName: i.image, user: i.name, autor: i.autor, song: i.song)) {
+                        
+                    songCard(image: i.image, user: i.name, autor: i.autor, song: i.song)
                     }
                 }
             }
-        }.padding(.leading)
+        }
+        
     }
 }
 

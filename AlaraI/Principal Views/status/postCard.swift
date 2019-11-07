@@ -31,13 +31,15 @@ struct postCard : View {
                 
                 Text(user)
                 Spacer()
+                /*
                 Button(action: {
                     
                 }) {
-                    Image("luchoQuequezana")
+                    Image("comment")
                         .resizable()
-                        .frame(width: 15, height: 15)
+                        .frame(width: 40, height: 40)
                 }
+                 */
             }
             
             AnimatedImage(url: URL(string: image))
@@ -48,9 +50,9 @@ struct postCard : View {
                 Button(action: {
                     
                 }) {
-                    Image("magnifyingglass")
+                    Image("comment")
                         .resizable()
-                        .frame(width: 26, height: 26)
+                        .frame(width: 45, height: 45)
                 }
                 
                 Button(action: {
@@ -70,20 +72,21 @@ struct postCard : View {
                         print("Actualizado...")
                     }
                 }) {
-                    Image("heart.fill")
+                    Image("heart")
                         .resizable()
-                        .frame(width: 26, height: 26)
+                        .frame(width: 30, height: 30)
                 }
                 
                 Spacer()
-                
+                /*
                 Button(action: {
                     
                 }) {
                     Image("luchoQuequezana")
                         .resizable()
-                        .frame(width: 30, height: 30)
+                        .frame(width: 40, height: 40)
                 }
+                    */
             }.padding(.top, 8)
             
             Text("\(likes) likes")

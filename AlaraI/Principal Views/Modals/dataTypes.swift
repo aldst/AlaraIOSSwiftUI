@@ -33,6 +33,7 @@ struct songData : Identifiable {
     var id : String
     var name : String
     var image : String
+    var autor : String
     var song : String
 }
 
