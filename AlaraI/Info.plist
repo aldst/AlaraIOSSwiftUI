@@ -4,9 +4,9 @@
 <dict>
     
 
+
     <key>CFBundleURLTypes</key> <array> <dict> <key>CFBundleURLSchemes</key> <array> <string>fb2430027740380034</string> </array> </dict> </array> <key>FacebookAppID</key> <string>2430027740380034</string> <key>FacebookDisplayName</key> <string>alaraIOS</string>
     
-
 
     <key>LSApplicationQueriesSchemes</key> <array> <string>fbapi</string> <string>fb-messenger-share-api</string> <string>fbauth2</string> <string>fbshareextension</string> </array>
     

@@ -8,6 +8,7 @@
 
 import SwiftUI
 import Firebase
+import FBSDKLoginKit
 
 struct ContentView: View {
     
@@ -144,19 +145,17 @@ struct ContentView: View {
                         
                     }
                     Spacer()
-                /*
+                
                     Text("O desea ingresar con:")
                         .font(.subheadline)
                         .fontWeight(.bold)
                         .foregroundColor(Color.black)
-                        .padding(.vertical, 
-                        .padding(.horizontal, 30)
            
                     login().frame(width: 140, height: 50, alignment: .leading)
                         .padding(.horizontal, 70)
                         .textFieldStyle(RoundedBorderTextFieldStyle()).padding()
                         .cornerRadius(8)
-                    */
+                    
                 
                     Spacer()
             }.padding(.horizontal)
@@ -179,7 +178,7 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-/*
+
 struct login : UIViewRepresentable {
     func makeCoordinator() -> login.Coordinator {
         
@@ -235,4 +234,4 @@ struct login : UIViewRepresentable {
         
     }
 }
-*/
+
