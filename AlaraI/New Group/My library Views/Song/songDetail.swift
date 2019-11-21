@@ -8,13 +8,19 @@
 
 import SwiftUI
 import SDWebImageSwiftUI
+import AVKit
 
 struct SongDetail: View {
+    
+    @State var time: CGFloat = 0
+    @State var player : AVAudioPlayer!
     
     var imName = ""
     var user = "" // name of the song
     var autor = ""
     var song = ""
+    var autorName = "Autor"
+    let frame: CGFloat = 8
     
     var body: some View {
         
@@ -33,7 +39,7 @@ struct SongDetail: View {
             
             HStack() {
                 Spacer()
-                Text("Autor")
+                Text(autorName)
                     .font(.subheadline)
                     .fontWeight(.semibold)
                 Spacer()
@@ -44,7 +50,52 @@ struct SongDetail: View {
             }
             Spacer()
             Spacer()
+            
+            ZStack(alignment: .leading, content: {
+                
+                // modifica la barra de reproducion de la cancion
+                Capsule()
+                    .fill(Color.white).frame(height: frame)
+                    .padding(8.0)
+                
+                Capsule()
+                    .fill(Color.red).frame(width: time ,height: frame)
+                    .padding(frame)
+            })
+            
+            Button(action: {
+                
+                self.player.play()
+                
+                DispatchQueue.global(qos: .background).async {
+                    
+                    while true {
+                        
+                        let screenWidth = UIScreen.main.bounds.width - 20
+                        
+                        let currenttime = self.player.currentTime / self.player.duration
+                        
+                        let timeForLabel = CGFloat(currenttime) * screenWidth
+                        
+                        self.time = timeForLabel
+                        
+                        print(currenttime)
+                    }
+                }
+                
+                
+            }) {
+                Text("Play")
+            }
+            Spacer()
+            Spacer()
+        }.onAppear() {
+            
+            let url = Bundle.main.path(forResource: self.song, ofType: "mp3")
+            
+            self.player = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: url!))
         }
+        
         
     }
 }

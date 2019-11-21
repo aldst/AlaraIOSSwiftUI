@@ -11,7 +11,6 @@
 		1E69A8C0236C92B20099F9A1 /* kuntur.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1E69A8BF236C92B20099F9A1 /* kuntur.mp3 */; };
 		1E69A8C2236C93310099F9A1 /* AVPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E69A8C1236C93310099F9A1 /* AVPlayerView.swift */; };
 		1E69A8D0236CC3460099F9A1 /* SongVerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E69A8CF236CC3460099F9A1 /* SongVerView.swift */; };
-		1E69A8D4236CD1090099F9A1 /* SongDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E69A8D3236CD1090099F9A1 /* SongDetailView.swift */; };
 		1E69A8DE236CD6B20099F9A1 /* ArtistDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E69A8DD236CD6B20099F9A1 /* ArtistDetailView.swift */; };
 		1E69A8E2236CD70B0099F9A1 /* ArtistVerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E69A8E1236CD70B0099F9A1 /* ArtistVerView.swift */; };
 		1E69A8E4236CE3B30099F9A1 /* ArtistHorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E69A8E3236CE3B30099F9A1 /* ArtistHorView.swift */; };
@@ -54,7 +53,6 @@
 		1E69A8C1236C93310099F9A1 /* AVPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerView.swift; sourceTree = "<group>"; };
 		1E69A8C3236C9ED10099F9A1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		1E69A8CF236CC3460099F9A1 /* SongVerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongVerView.swift; sourceTree = "<group>"; };
-		1E69A8D3236CD1090099F9A1 /* SongDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailView.swift; sourceTree = "<group>"; };
 		1E69A8DD236CD6B20099F9A1 /* ArtistDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistDetailView.swift; sourceTree = "<group>"; };
 		1E69A8E1236CD70B0099F9A1 /* ArtistVerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistVerView.swift; sourceTree = "<group>"; };
 		1E69A8E3236CE3B30099F9A1 /* ArtistHorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistHorView.swift; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				1E69A8CF236CC3460099F9A1 /* SongVerView.swift */,
-				1E69A8D3236CD1090099F9A1 /* SongDetailView.swift */,
 				8B787EA8237454F7000F69AA /* songDetail.swift */,
 			);
 			path = Song;
@@ -400,7 +397,6 @@
 				1E6DD6E92368136F00A29A5A /* AppDelegate.swift in Sources */,
 				1E6DD6EB2368136F00A29A5A /* SceneDelegate.swift in Sources */,
 				1E69A8E4236CE3B30099F9A1 /* ArtistHorView.swift in Sources */,
-				1E69A8D4236CD1090099F9A1 /* SongDetailView.swift in Sources */,
 				8B787EA9237454F7000F69AA /* songDetail.swift in Sources */,
 				1E73444F2370BB5900EBD2A8 /* postCard.swift in Sources */,
 				1E69A8D0236CC3460099F9A1 /* SongVerView.swift in Sources */,
