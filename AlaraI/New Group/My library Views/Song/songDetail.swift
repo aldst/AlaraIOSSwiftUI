@@ -19,8 +19,7 @@ struct SongDetail: View {
     var user = "" // name of the song
     var autor = ""
     var song = ""
-    var autorName = "Autor"
-    let frame: CGFloat = 8
+
     
     var body: some View {
         
@@ -39,7 +38,7 @@ struct SongDetail: View {
             
             HStack() {
                 Spacer()
-                Text(autorName)
+                Text("Autor")
                     .font(.subheadline)
                     .fontWeight(.semibold)
                 Spacer()
@@ -51,17 +50,17 @@ struct SongDetail: View {
             Spacer()
             Spacer()
             
-            ZStack(alignment: .leading, content: {
-                
+
                 // modifica la barra de reproducion de la cancion
-                Capsule()
-                    .fill(Color.white).frame(height: frame)
-                    .padding(8.0)
+            /*
+            Capsule()
+                .fill(Color.white)
+                .padding(8.0)
                 
-                Capsule()
-                    .fill(Color.red).frame(width: time ,height: frame)
-                    .padding(frame)
-            })
+            Capsule()
+                .fill(Color.red).frame(width: time ,height: CGFloat(8.0))
+                .padding(8.0)
+            */
             
             Button(action: {
                 
@@ -82,20 +81,16 @@ struct SongDetail: View {
                         print(currenttime)
                     }
                 }
-                
-                
             }) {
                 Text("Play")
             }
-            Spacer()
-            Spacer()
         }.onAppear() {
             
             let url = Bundle.main.path(forResource: self.song, ofType: "mp3")
             
             self.player = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: url!))
+            
         }
-        
         
     }
 }
