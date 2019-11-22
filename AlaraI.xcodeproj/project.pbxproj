@@ -11,7 +11,6 @@
 		1E69A8C0236C92B20099F9A1 /* kuntur.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1E69A8BF236C92B20099F9A1 /* kuntur.mp3 */; };
 		1E69A8C2236C93310099F9A1 /* AVPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E69A8C1236C93310099F9A1 /* AVPlayerView.swift */; };
 		1E69A8D0236CC3460099F9A1 /* SongVerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E69A8CF236CC3460099F9A1 /* SongVerView.swift */; };
-		1E69A8D4236CD1090099F9A1 /* SongDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E69A8D3236CD1090099F9A1 /* SongDetailView.swift */; };
 		1E69A8DE236CD6B20099F9A1 /* ArtistDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E69A8DD236CD6B20099F9A1 /* ArtistDetailView.swift */; };
 		1E69A8E2236CD70B0099F9A1 /* ArtistVerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E69A8E1236CD70B0099F9A1 /* ArtistVerView.swift */; };
 		1E69A8E4236CE3B30099F9A1 /* ArtistHorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E69A8E3236CE3B30099F9A1 /* ArtistHorView.swift */; };
@@ -32,6 +31,8 @@
 		1E73444F2370BB5900EBD2A8 /* postCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E73444E2370BB5900EBD2A8 /* postCard.swift */; };
 		1E7344522370BDE800EBD2A8 /* Observers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7344512370BDE800EBD2A8 /* Observers.swift */; };
 		1E7344542370BE8900EBD2A8 /* dataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7344532370BE8900EBD2A8 /* dataTypes.swift */; };
+		1EA2B5AB2377ADE500D2C38F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1EA2B5AA2377ADE500D2C38F /* Alamofire */; };
+		1EA2B5AE2377AE7200D2C38F /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 1EA2B5AD2377AE7200D2C38F /* SwiftyJSON */; };
 		1EDD88C42372525E00561DD4 /* albumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDD88C32372525E00561DD4 /* albumView.swift */; };
 		1EDD88C62372547500561DD4 /* albumCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDD88C52372547500561DD4 /* albumCard.swift */; };
 		1EF5CC3F2369C8AA0029F1CC /* tabBarIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF5CC3E2369C8AA0029F1CC /* tabBarIView.swift */; };
@@ -54,7 +55,6 @@
 		1E69A8C1236C93310099F9A1 /* AVPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerView.swift; sourceTree = "<group>"; };
 		1E69A8C3236C9ED10099F9A1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		1E69A8CF236CC3460099F9A1 /* SongVerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongVerView.swift; sourceTree = "<group>"; };
-		1E69A8D3236CD1090099F9A1 /* SongDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailView.swift; sourceTree = "<group>"; };
 		1E69A8DD236CD6B20099F9A1 /* ArtistDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistDetailView.swift; sourceTree = "<group>"; };
 		1E69A8E1236CD70B0099F9A1 /* ArtistVerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistVerView.swift; sourceTree = "<group>"; };
 		1E69A8E3236CE3B30099F9A1 /* ArtistHorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistHorView.swift; sourceTree = "<group>"; };
@@ -97,7 +97,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EA2B5AB2377ADE500D2C38F /* Alamofire in Frameworks */,
 				1E734448236FCEB800EBD2A8 /* SDWebImageSwiftUI in Frameworks */,
+				1EA2B5AE2377AE7200D2C38F /* SwiftyJSON in Frameworks */,
 				391E824067107D50796AB4D9 /* Pods_AlaraI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,7 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				1E69A8CF236CC3460099F9A1 /* SongVerView.swift */,
-				1E69A8D3236CD1090099F9A1 /* SongDetailView.swift */,
 				8B787EA8237454F7000F69AA /* songDetail.swift */,
 			);
 			path = Song;
@@ -271,6 +272,8 @@
 			name = AlaraI;
 			packageProductDependencies = (
 				1E734447236FCEB800EBD2A8 /* SDWebImageSwiftUI */,
+				1EA2B5AA2377ADE500D2C38F /* Alamofire */,
+				1EA2B5AD2377AE7200D2C38F /* SwiftyJSON */,
 			);
 			productName = AlaraI;
 			productReference = 1E6DD6E52368136F00A29A5A /* AlaraI.app */;
@@ -302,6 +305,8 @@
 			mainGroup = 1E6DD6DC2368136F00A29A5A;
 			packageReferences = (
 				1E734444236FADA100EBD2A8 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				1EA2B5A92377ADE500D2C38F /* XCRemoteSwiftPackageReference "Alamofire" */,
+				1EA2B5AC2377AE7200D2C38F /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			productRefGroup = 1E6DD6E62368136F00A29A5A /* Products */;
 			projectDirPath = "";
@@ -400,7 +405,6 @@
 				1E6DD6E92368136F00A29A5A /* AppDelegate.swift in Sources */,
 				1E6DD6EB2368136F00A29A5A /* SceneDelegate.swift in Sources */,
 				1E69A8E4236CE3B30099F9A1 /* ArtistHorView.swift in Sources */,
-				1E69A8D4236CD1090099F9A1 /* SongDetailView.swift in Sources */,
 				8B787EA9237454F7000F69AA /* songDetail.swift in Sources */,
 				1E73444F2370BB5900EBD2A8 /* postCard.swift in Sources */,
 				1E69A8D0236CC3460099F9A1 /* SongVerView.swift in Sources */,
@@ -633,6 +637,22 @@
 				minimumVersion = 0.7.0;
 			};
 		};
+		1EA2B5A92377ADE500D2C38F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.9.1;
+			};
+		};
+		1EA2B5AC2377AE7200D2C38F /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -640,6 +660,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1E734444236FADA100EBD2A8 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
+		};
+		1EA2B5AA2377ADE500D2C38F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1EA2B5A92377ADE500D2C38F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		1EA2B5AD2377AE7200D2C38F /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1EA2B5AC2377AE7200D2C38F /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

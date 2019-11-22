@@ -9,6 +9,8 @@
 import SwiftUI
 import Firebase
 import FirebaseFirestore
+import Alamofire
+import SwiftyJSON
 
 class artistObserver : ObservableObject{
     
@@ -201,3 +203,22 @@ class albumObserver : ObservableObject{
         }
     }
 }
+/*
+class songHerokubserver : ObservableObject{
+    
+   @Published var datas = [datatype2]()
+    
+    init() {
+        Alamofire.request("https://rocky-fjord-18899.herokuapp.com/api/cancion").responseData { (data) in
+            
+            let json = try! JSON(data: data.data!)
+            
+            for i in json{
+                self.datas.append(datatype2(id: i.1["id"].intValue,
+                                           name: i.1["nombre"].stringValue,
+                                           contenido: i.1["contenido"].stringValue))
+            }
+        }
+    }
+}
+*/

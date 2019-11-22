@@ -44,3 +44,16 @@ struct albumData : Identifiable{
     var image : String
     var autor : String
 }
+
+struct songHeroku : Identifiable{
+    
+    var id : Int
+    var nombre : String
+    var fecha : String
+    var contenido : String
+    var url : String
+    var estadoPublico : Bool
+    var generoId : Int
+    var artistaId : Int
+    var discoId : Int
+}

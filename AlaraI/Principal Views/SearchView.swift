@@ -11,6 +11,7 @@ import SwiftUI
 struct SearchView: View {
     
     @ObservedObject var songobserved = songObserver()
+    
     @State var show = false
     @State var user = ""
     @State var url = ""
