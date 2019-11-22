@@ -9,15 +9,22 @@
 import SwiftUI
 import SDWebImageSwiftUI
 import AVKit
+<<<<<<< HEAD
 import Alamofire
 import SwiftyJSON
+=======
+>>>>>>> d6cc8066f45b5a06452216efeeb2dacff825738b
 
 struct SongDetail: View {
+    
+    @State var time: CGFloat = 0
+    @State var player : AVAudioPlayer!
     
     var imName = ""
     var user = "" // name of the song
     var autor = ""
     var song = ""
+
     
     var body: some View {
         
@@ -48,6 +55,7 @@ struct SongDetail: View {
             Spacer()
             Spacer()
             
+<<<<<<< HEAD
             
             
             /*
@@ -140,6 +148,48 @@ struct songPlayer : View {
                 
                 self.player = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: url!))
             }
+=======
+
+                // modifica la barra de reproducion de la cancion
+            /*
+            Capsule()
+                .fill(Color.white)
+                .padding(8.0)
+                
+            Capsule()
+                .fill(Color.red).frame(width: time ,height: CGFloat(8.0))
+                .padding(8.0)
+            */
+            
+            Button(action: {
+                
+                self.player.play()
+                
+                DispatchQueue.global(qos: .background).async {
+                    
+                    while true {
+                        
+                        let screenWidth = UIScreen.main.bounds.width - 20
+                        
+                        let currenttime = self.player.currentTime / self.player.duration
+                        
+                        let timeForLabel = CGFloat(currenttime) * screenWidth
+                        
+                        self.time = timeForLabel
+                        
+                        print(currenttime)
+                    }
+                }
+            }) {
+                Text("Play")
+            }
+        }.onAppear() {
+            
+            let url = Bundle.main.path(forResource: self.song, ofType: "mp3")
+            
+            self.player = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: url!))
+            
+>>>>>>> d6cc8066f45b5a06452216efeeb2dacff825738b
         }
         
     }

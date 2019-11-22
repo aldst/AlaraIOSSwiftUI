@@ -18,6 +18,7 @@ struct AVPlayerView: View {
         
         VStack {
             
+            
             ZStack(alignment: .leading, content: {
                 
                 // modifica la barra de reproducion de la cancion
